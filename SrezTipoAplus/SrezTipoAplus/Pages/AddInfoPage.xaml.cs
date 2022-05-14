@@ -14,9 +14,10 @@ namespace SrezTipoAplus.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AddInfoPage : ContentPage
     {
-        public AddInfoPage()
+        public AddInfoPage(string itemName)
         {
             InitializeComponent();
+            Title = itemName;
         }
 
         private async void btn_save_Clicked(object sender, EventArgs e)

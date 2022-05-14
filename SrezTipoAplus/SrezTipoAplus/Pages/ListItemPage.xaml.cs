@@ -28,12 +28,12 @@ namespace SrezTipoAplus.Pages
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AddInfoPage());
+            await Navigation.PushAsync(new AddInfoPage(null));
         }
 
-        private void itemsLv_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void itemsLv_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
+            await Navigation.PushAsync(new AddInfoPage(itemsLv.SelectedItem.ToString()));
         }
     }
 }

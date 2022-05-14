@@ -19,8 +19,7 @@
                        FontFamily="TamaFont"/>
                 <DatePicker BackgroundColor="White" 
                             Format="D" 
-                            DateSelected="DatePicker_DateSelected"
-                            />
+                            DateSelected="DatePicker_DateSelected"/>
             </StackLayout>
             <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
                 <Button Text="Сохранить"
