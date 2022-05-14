@@ -28,6 +28,9 @@ namespace SrezTipoAplus.Pages
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
+            Item item = new Item();
+            AddInfoPage infoPage= new AddInfoPage(null);
+            infoPage.BindingContext = item;
             await Navigation.PushAsync(new AddInfoPage(null));
         }
 
