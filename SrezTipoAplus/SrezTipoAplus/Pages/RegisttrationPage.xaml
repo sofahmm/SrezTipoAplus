@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SrezTipoAplus.Pages.RegisttrationPage"
+             Visual="Material">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Vertical"
+                         HorizontalOptions="Center">
+                <Label Text="ФИО"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Start"/>
+                <Entry Placeholder="Введите ФИО"
+                       WidthRequest="250"
+                       HeightRequest="55"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical"
+                         HorizontalOptions="Center">
+                <Label Text="Логин"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Start"/>
+                <Entry Placeholder="Введите логин"
+                       WidthRequest="250"
+                       HeightRequest="55"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical"
+                         HorizontalOptions="Center">
+                <Label Text="Пароль"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Start"/>
+                <Entry Placeholder="Введите пароль"
+                       WidthRequest="250"
+                       HeightRequest="55"/>
+            </StackLayout>
+            <Button Text="OK"
+                    x:Name="RegistrBtn"
+                    Clicked="RegistrBtn_Clicked"
+                    HeightRequest="60"
+                    WidthRequest="200"
+                    HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
